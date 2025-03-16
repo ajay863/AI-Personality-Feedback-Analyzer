@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">AI Personality Feedback Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h2>AI Personality Feedback Analyzer</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="howtouse.html">How to Use</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <video id="camera" autoplay></video>
+        <div class="buttons">
+            <button id="startCamera">Start Camera</button>
+            <button id="stopCamera" >Stop Camera</button>
+            <button id="startRecording" >Start Recording</button>
+            <button id="stopRecording" >Stop Recording</button>
+        </div>
+
+        <p id="timer">Recording Time: 0s</p>
+
+        <div class="feedback">
+            <h3>Live Feedback</h3>
+            <p id="liveFeedback">Waiting...</p>
+
+            <h3>Aspect Feedback</h3>
+            <p><strong>Eye Contact:</strong> <span id="eyeContact">Waiting...</span></p>
+            <p><strong>Confidence:</strong> <span id="confidence">Waiting...</span></p>
+            <p><strong>Posture:</strong> <span id="posture">Waiting...</span></p>
+            <p><strong>Speaking Performance:</strong> <span id="speakingPerformance">Waiting...</span></p>
+            <p><strong>Final Performance Score:</strong> <span id="finalScore">Waiting...</span></p>
+        </div>
+
+        <h3>Recorded Video</h3>
+        <video id="recordedVideo" controls></video>
+        <div class="download-container">
+        <button id="downloadVideo">Download Video</button>
+    </div>
+    </div>
+
+    
+
+    <footer>
+        <p>© 2025 AI Personality Feedback Analyzer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
