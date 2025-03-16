@@ -16,10 +16,11 @@
 
         nav {
             background-color: #1a252f;
-            padding: 10px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         nav ul {
@@ -27,17 +28,19 @@
             padding: 0;
             margin: 0;
             display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 5px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 8px 12px;
             transition: background 0.3s, color 0.3s;
+            font-size: 16px;
         }
 
         nav ul li a:hover {
@@ -83,6 +86,53 @@
             margin-top: 20px;
             color: white;
         }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            p, ul {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p, ul {
+                font-size: 14px;
+            }
+        }
+
     </style>
 </head>
 <body>
