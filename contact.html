@@ -16,10 +16,11 @@
 
         nav {
             background-color: #1a252f;
-            padding: 10px;
+            padding: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         nav ul {
@@ -27,17 +28,19 @@
             padding: 0;
             margin: 0;
             display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 0 10px;
+            margin: 5px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 8px 12px;
             transition: background 0.3s, color 0.3s;
+            font-size: 16px;
         }
 
         nav ul li a:hover {
@@ -89,16 +92,18 @@
             margin: 10px 0;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
         }
 
         button {
             background-color: orange;
             color: black;
-            padding: 10px;
+            padding: 12px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
 
         button:hover {
@@ -123,6 +128,62 @@
             margin-top: 20px;
             color: white;
         }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            p, .contact-details {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            input, textarea, button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p, .contact-details {
+                font-size: 14px;
+            }
+
+            input, textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,7 +203,7 @@
         <p>Have any questions, suggestions, or need support? Get in touch with us through the details below or fill out the contact form.</p>
 
         <div class="contact-details">
-            <p><strong>📍 Address:</strong> AI Feedback SYSTEMS,PULIVENDULA,KADAPA,AP</p>
+            <p><strong>📍 Address:</strong> AI Feedback SYSTEMS, PULIVENDULA, KADAPA, AP</p>
             <p><strong>📞 Phone:</strong> +91 8639016968</p>
             <p><strong>📧 Email:</strong> support@aifeedback.com</p>
             <p><strong>🕒 Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM</p>
